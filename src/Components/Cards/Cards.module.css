@@ -5,6 +5,14 @@
     margin: 50px 0;
 }
 
+.content {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.description {
+    text-align: center;
+}
 
 .deaths {
     border-bottom: 10px solid rgba(247, 96, 126, 0.938);

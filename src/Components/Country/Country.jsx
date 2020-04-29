@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {NativeSelect, FormControl} from '@material-ui/core'
+import {FormControl, MenuItem, Select, InputLabel} from '@material-ui/core'
 import {receivedCountries} from '../../Api/Api'
 import styles from './Country.module.css';
 
@@ -16,9 +16,10 @@ const Countries = ({handleCountryChange}) => {
 
     return (
         <FormControl className={styles.formControl}>
-            <NativeSelect defaultValue="" onChange={(event) => handleCountryChange(event.target.value)}>
-                <option value="">Global</option>{Countries.map((country, index) => <option key={index} value={country}>{country}</option>)}
-            </NativeSelect>
+            <InputLabel>Country</InputLabel>
+            <Select defaultValue="" onChange={(event) => handleCountryChange(event.target.value)}>
+                <MenuItem value="">Global</MenuItem>{Countries.map((country, index) => <MenuItem key={index} value={country}>{country}</MenuItem>)}
+            </Select>
         </FormControl>
     );
 };

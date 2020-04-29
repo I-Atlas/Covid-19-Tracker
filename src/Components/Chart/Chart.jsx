@@ -18,19 +18,17 @@ const Chart = ({data: {deaths, confirmed, recovered}, country}) => {
     const lineChart = (
         dailyData[0] ? (<Line data={{
                 labels: dailyData.map(({date}) => date),
-                datasets: [{
+                datasets: [
+                    {label: 'Confirmed', 
                     data: dailyData.map((data) => data.confirmed),
-                    label: 'Confirmed',
                     borderColor: 'rgb(79, 114, 255)',
                     backgroundColor: 'rgba(137, 199, 247, 0.3)',
-                    fill: true,
-                },{
+                    fill: true,},
+                    {label: 'Deaths',
                     data: dailyData.map((data) => data.deaths),
-                    label: 'Deaths',
                     borderColor: 'rgb(163, 27, 14)',
                     backgroundColor: 'rgba(247, 96, 126, 0.3)',
-                    fill: true,
-                },
+                    fill: true,}
                 ],
             }}
         />
@@ -49,7 +47,7 @@ const Chart = ({data: {deaths, confirmed, recovered}, country}) => {
             }}
             options={{
                 legend: {display: false},
-                title: {display: true, text: `Current state in ${country}`},
+                title: {display: true, text: `Current situation in ${country}`},
                 }}
             />
         ): null
