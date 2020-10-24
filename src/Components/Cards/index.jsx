@@ -6,7 +6,7 @@ import styles from "./Cards.module.css";
 
 const Cards = ({ data: { deaths, confirmed, recovered, lastUpdate } }) => {
   if (!confirmed) {
-    return "☣";
+    return "No Confirmed";
   }
   return (
     <div className={styles.container}>
