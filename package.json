@@ -1,7 +1,18 @@
 {
-  "name": "covid19tracker",
-  "version": "0.1.0",
+  "name": "covid-19-tracker",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "Iliya Bolotov",
+    "email": "bolotov.iliya.w@gmail.com",
+    "url": "https://i-atlas.github.io"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/I-Atlas/covid-19-tracker.git"
+  },
+  "homepage": "https://i-atlas.github.io/covid-19-tracker/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^5.11.4",
@@ -22,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
