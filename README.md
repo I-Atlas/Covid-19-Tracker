@@ -25,15 +25,16 @@ https://github.com/mathdroid/covid-19-api
 `npm start`
 
 ## Some useul information:
-* **What is coronavirus?**
+
+- **What is coronavirus?**
 
 Coronaviruses are a family of viruses that range from the common cold to MERS coronavirus, which is Middle East Respiratory Syndrome coronavirus and SARs, Severe acute respiratory syndrome coronavirus.
 
-* **What is COVID-19?**
+- **What is COVID-19?**
 
 COVID‑19 is an infectious disease caused by the last of the recently discovered coronaviruses. Prior to the outbreak in Wuhan, China, in December 2019, nothing was known about the new virus and disease.
 
-* **Protect yourself and others from getting sick**
+- **Protect yourself and others from getting sick**
 
 <p align="center">
         <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">

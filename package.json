@@ -1,20 +1,21 @@
 {
-  "name": "covid19",
-  "version": "1.0.0",
+  "name": "covid19tracker",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.9.12",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
-    "chart.js": "^2.9.3",
+    "@material-ui/core": "^4.11.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.0",
+    "chart.js": "^2.9.4",
     "classnames": "^2.2.6",
-    "react": "^16.13.1",
-    "react-chartjs-2": "^2.9.0",
+    "react": "^17.0.1",
+    "react-chartjs-2": "^2.10.0",
     "react-countup": "^4.3.3",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.0",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,7 +26,10 @@
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [

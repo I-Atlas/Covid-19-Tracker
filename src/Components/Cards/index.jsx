@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
 import Countup from "react-countup";
 import cx from "classnames";
@@ -6,7 +5,11 @@ import styles from "./Cards.module.css";
 
 const Cards = ({ data: { deaths, confirmed, recovered, lastUpdate } }) => {
   if (!confirmed) {
-    return "No Confirmed";
+    return (
+      <Typography color="textSecondary" className={styles.content}>
+        No confirmed.
+      </Typography>
+    );
   }
   return (
     <div className={styles.container}>
